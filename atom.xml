@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[EcoData Retriever]]></title>
-  <link href="http://weecology.github.io/retriever-website/atom.xml" rel="self"/>
-  <link href="http://weecology.github.io/retriever-website/"/>
-  <updated>2013-12-10T22:37:49-05:00</updated>
-  <id>http://weecology.github.io/retriever-website/</id>
+  <link href="http://ecodataretriever.org/atom.xml" rel="self"/>
+  <link href="http://ecodataretriever.org/"/>
+  <updated>2013-12-10T22:43:43-05:00</updated>
+  <id>http://ecodataretriever.org/</id>
   <author>
     <name><![CDATA[Ethan White]]></name>
     

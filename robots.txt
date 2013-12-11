@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://weecology.github.io/retriever-website/sitemap.xml 
+Sitemap: http://ecodataretriever.org/sitemap.xml 
