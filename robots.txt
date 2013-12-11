@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://ethanwhite.github.io/retriever-website/sitemap.xml 
+Sitemap: http://weecology.github.io/retriever-website/sitemap.xml 
