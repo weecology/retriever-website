@@ -1,0 +1,300 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Getting Started - EcoData Retriever</title>
+	<meta name="author" content="Ethan White">
+
+	
+	<meta name="description" content="Installing Packages Packages are provided for Windows and Ubuntu/Debian Linux, or you can
+install from the Python source. Windows Simply download and &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/retriever-website/atom.xml" rel="alternate" title="EcoData Retriever" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://ethanwhite.github.io/retriever-website/getting_started.html">
+	<link href="/retriever-website/favicon.png" rel="shortcut icon">
+	<link href="/retriever-website/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/retriever-website/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	
+	<img src="http://www.gravatar.com/avatar/ea09e950a307e273ef8d85184c49e7d7?s=160" alt="Profile Picture" style="width: 160px;" />
+	
+</div>
+<hgroup>
+  <h1><a href="/retriever-website/">EcoData Retriever</a></h1>
+  
+    <h2>We handle the data, you handle the science</h2>
+  
+</hgroup>
+
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="/retriever-website/">Home</a></li>
+  <li><a href="/retriever-website/download.html">Download</a></li>
+  <li><a href="/retriever-website/getting_started.html">Getting Started</a></li>
+  <li><a href="/retriever-website/cli.html">Command Line</a></li>
+  <li><a href="/retriever-website/scripting.html">Adding Datasets</a></li>
+</ul>
+
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<a class="rss" href="/retriever-website/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="page">
+    
+    <h1 class="title">Getting Started</h1>
+    
+    <div class="entry-content"><h2>Installing Packages</h2>
+
+<p>Packages are provided for Windows and Ubuntu/Debian Linux, or you can
+install from the Python source.</p>
+
+<h3>Windows</h3>
+
+<p>Simply download and run
+<a href="https://s3.amazonaws.com/ecodata-retriever/retriever.exe">retriever.exe</a>.
+This can be run as a Windows application or from the command line using
+the command line interface.</p>
+
+<h3>Linux</h3>
+
+<p><a href="https://s3.amazonaws.com/ecodata-retriever/python-retriever_1.5-1_all.deb">A Debian
+package</a>
+is provided; If you&rsquo;re on a non-Debian based system, refer to the
+instructions under Installing from Source.</p>
+
+<h3>Mac</h3>
+
+<p>Install from source. The following recipe is known to work for OSX 10.8+.</p>
+
+<ol>
+<li>Install Xcode</li>
+<li>Install the Xcode command line tools
+
+<ul>
+<li><code>xcode-select --install</code></li>
+</ul>
+</li>
+<li>Install Homebrew
+
+<ul>
+<li><code>ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"</code></li>
+</ul>
+</li>
+<li>Install Python
+
+<ul>
+<li><code>brew install python</code></li>
+</ul>
+</li>
+<li>Install wxPython using Homebrew
+
+<ul>
+<li><code>brew install --python wxmac --devel</code></li>
+<li><strong>NOTE: This takes a very long time</strong></li>
+</ul>
+</li>
+<li>Make brew&rsquo;s Python the default
+
+<ul>
+<li><code>echo export PATH='usr/local/bin:$PATH' &gt;&gt; ~/.bash_profile</code></li>
+</ul>
+</li>
+<li>Install xlrd via pip
+
+<ul>
+<li><code>pip install xlrd</code></li>
+<li>No <code>sudo</code> is necessary since we&rsquo;re using brew</li>
+</ul>
+</li>
+<li>Install py2app via pip
+
+<ul>
+<li><code>pip install py2app</code>.</li>
+</ul>
+</li>
+<li>Clone the Retriever
+
+<ul>
+<li><code>git clone git@github.com:weecology/retriever.git</code></li>
+</ul>
+</li>
+<li>Switch directories
+
+<ul>
+<li><code>cd retriever</code></li>
+</ul>
+</li>
+<li>Standard install
+
+<ul>
+<li><code>python setup.py install</code></li>
+</ul>
+</li>
+</ol>
+
+
+<h2>Installing from Source</h2>
+
+<p>To install the EcoData Retriever from source, you&rsquo;ll need:</p>
+
+<ul>
+<li>Python version 2.7.1 or greater (not Python 3.x)</li>
+<li>wxPython version 2.8; <em>Mac users need to use the experimental
+<a href="http://www.wxpython.org/download.php#unstable">wxPython version
+2.9</a>.</em></li>
+<li>xlrd</li>
+</ul>
+
+
+<p>On Ubuntu, the following command will install all required dependencies:</p>
+
+<p><code>sudo apt-get install python-setuptools python-wxgtk2.8 python-xlrd</code></p>
+
+<p>The following packages are optional:</p>
+
+<ul>
+<li>PyMySQL (preferred) or MySQLdb (for MySQL)</li>
+<li>sqlite3 (for SQLite)</li>
+<li>pyscopg2 (for PostgreSQL)</li>
+<li>pyodbc (for Microsoft Access &ndash; this option is only available on
+Windows)</li>
+</ul>
+
+
+<p>To download and install the Retriever from source, use the following
+commands (Windows users should use a Unix-like environment such as Git
+bash or Cygwin):</p>
+
+<ol>
+<li><code>wget https://s3.amazonaws.com/ecodata-retriever/retriever-src.tar.gz</code></li>
+<li><code>tar -xvzf retriever-src.tar.gz</code></li>
+<li><code>cd src</code></li>
+<li><code>sudo python setup.py install</code></li>
+</ol>
+
+
+<p>If you prefer to install the current master branch:</p>
+
+<ol>
+<li><code>git clone git@github.com:weecology/retriever.git</code></li>
+<li><code>cd retriever</code></li>
+<li><code>sudo python setup.py install</code></li>
+</ol>
+
+
+<p>After installing, type <code>retriever</code> to launch.</p>
+
+<h2>Using the Graphical User Interface</h2>
+
+<p>The first time you launch the EcoData Retriever, it will automatically
+download all available Retriever scripts. You&rsquo;ll then be prompted to
+choose a database system and enter your connection information. Once
+this process is complete, you&rsquo;ll see the following screen:</p>
+
+<p><img src="images/figure1.png" alt="EcoData Retriever GUI" /></p>
+
+<p>You&rsquo;ll see each available dataset with citation information and a link
+to the dataset website. Click on the box icon to start downloading the
+data.</p>
+
+<p>You can use the categories on the left to filter the data to show, for
+example, only data from a specific taxonomic group (like Mammals in the
+image above). You can also search for specific terms using Edit > Find.</p>
+
+<p>If you need to change the database management system that you are using
+just select File > Connection from the menu.</p>
+
+<h2>Using custom scripts</h2>
+
+<p>You can also write your own scripts for datasets that aren&rsquo;t currently
+included in the Retriever. Follow the <a href="scripting.html">instructions for adding
+datasets</a> and then place your custom script in either
+the directory where you are running the Retriever or in a subdirectory
+named &#8220;scripts&#8220;.</p>
+</div>
+</article>
+
+
+</div>
+			</div>
+			<footer id="footer" class="inner"><p>
+  Copyright &copy; 2013 - Ethan White -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>

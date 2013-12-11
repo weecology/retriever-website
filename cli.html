@@ -1,0 +1,257 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Using the command line interface - EcoData Retriever</title>
+	<meta name="author" content="Ethan White">
+
+	
+	<meta name="description" content="The Retriever includes a command line interface to allow its
+capabilities to be integrated into scientific workflows involving
+non-Python programming &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/retriever-website/atom.xml" rel="alternate" title="EcoData Retriever" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://ethanwhite.github.io/retriever-website/cli.html">
+	<link href="/retriever-website/favicon.png" rel="shortcut icon">
+	<link href="/retriever-website/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/retriever-website/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	
+	<img src="http://www.gravatar.com/avatar/ea09e950a307e273ef8d85184c49e7d7?s=160" alt="Profile Picture" style="width: 160px;" />
+	
+</div>
+<hgroup>
+  <h1><a href="/retriever-website/">EcoData Retriever</a></h1>
+  
+    <h2>We handle the data, you handle the science</h2>
+  
+</hgroup>
+
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="/retriever-website/">Home</a></li>
+  <li><a href="/retriever-website/download.html">Download</a></li>
+  <li><a href="/retriever-website/getting_started.html">Getting Started</a></li>
+  <li><a href="/retriever-website/cli.html">Command Line</a></li>
+  <li><a href="/retriever-website/scripting.html">Adding Datasets</a></li>
+</ul>
+
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<a class="rss" href="/retriever-website/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="page">
+    
+    <h1 class="title">Using the Command Line Interface</h1>
+    
+    <div class="entry-content"><p>The Retriever includes a command line interface to allow its
+capabilities to be integrated into scientific workflows involving
+non-Python programming languages. For example, the Retriever can easily
+be called from R (or run as part of a pipe workflow including R) to
+automate the downloading and installing of databases necessary for
+analysis. This also makes it easier to use in batch processes or on
+servers that don&rsquo;t have graphical capabilities.</p>
+
+<p>After installing, run <code>retriever update</code> to download all of the
+available dataset scripts. To see the full list of command line options
+and datasets run <code>retriever --help</code>. The output will look like this:</p>
+
+<pre><code>usage: retriever [-h] [-v] {install,update,gui,new,ls,help} ...
+
+positional arguments:
+  {install,update,gui,new,ls,help}
+                        sub-command help
+    install             download and install dataset
+    update              download updated versions of scripts
+    gui                 launch retriever in graphical mode
+    new                 create a new sample retriever script
+    ls                  display a list all available dataset scripts
+    help
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -v, --version         show program's version number and exit
+</code></pre>
+
+<h2>Standard Usage</h2>
+
+<p>To get the most recent versions of the data set scripts, run
+<code>retriever update</code></p>
+
+<p>To install datasets, use <code>retriever install</code>:</p>
+
+<pre><code>usage: retriever install [-h] [-e ENGINE] [-u [USER]] [-p [PASSWORD]]
+                         [--host [HOST]] [-o [PORT]] [-d [DB]] [-f [FILE]]
+                         [--compile] [--debug]
+                         [dataset]
+
+positional arguments:
+  dataset               dataset name
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -e ENGINE, --engine ENGINE
+                        engine (m=MySQL, p=PostgreSQL, s=SQLite, a=Microsoft
+                        Access, c=CSV)
+  -u [USER], --user [USER]
+                        username for database connection, if applicable
+  -p [PASSWORD], --password [PASSWORD]
+                        password for database connection, if applicable
+  --host [HOST]         host for engine, if applicable
+  -o [PORT], --port [PORT]
+                        port for engine, if applicable
+  -d [DB], --db [DB]    database for engine, if applicable
+  -f [FILE], --file [FILE]
+                        file for engine, if applicable
+  --compile             force re-compile of script before downloading
+  --debug               run in debug mode
+</code></pre>
+
+<p>For example, to install the Breeding Bird Survey data into an sqlite
+database named mydatabase.db you would use:</p>
+
+<pre><code>retriever install BBS -e s -f mydatabase.db
+</code></pre>
+
+<p>You will be prompted for any necessary connection information that is
+not provided.</p>
+
+<p>To download all data for a given category (such as all data related to
+BIRDS), you can use:</p>
+
+<pre><code>retriever install birds -e s -f mydatabase.db
+</code></pre>
+
+<p>This is the same as <code>retriever install ___</code> for every dataset with the
+BIRDS tag.</p>
+
+<h2>Using the Command Line Interface from inside R</h2>
+
+<p>Because we have a command line interface, using the EcoData Retriever
+with languages other than the one it is written in is easy. Using the
+Retriever from inside of R just requires the use of the <code>system()</code>
+function and your preferred approach for importing data.</p>
+
+<h4>Basics (Linux and Installations from Source)</h4>
+
+<p>In the simplest case, if you wanted to import the Gentry Forest Transect
+Data the following command from inside of R will download the data,
+convert it to a useable form, save it as comma delimited text files.</p>
+
+<pre><code>system("retriever install Gentry -e c")
+</code></pre>
+
+<p>Then you can simply import the resulting files in the usual manner.</p>
+
+<pre><code>count_data &lt;- read.csv("Gentry_counts.csv")
+stem_data &lt;- read.csv("Gentry_stems.csv")
+species_data &lt;- read.csv("Gentry_species.csv")
+sites_data &lt;- read.csv("Gentry_sites.csv")
+</code></pre>
+
+<p>Alternatively you can use a modified version of the <code>system()</code> function
+to import into to the other database management systems and then
+interact with them through packages like
+<a href="http://cran.r-project.org/web/packages/RSQLite/index.html">RSQLite</a> and
+<a href="http://cran.r-project.org/web/packages/RMySQL/index.html">RMySQL</a></p>
+
+<h4>Windows</h4>
+
+<p>On Windows it is necessary for the working directory to be set to the
+location of the retriever.exe file so that R knows where the Retriever
+is located. So, if I placed the Retriever on my Desktop I would use the
+commands:</p>
+
+<pre><code>setwd("C:\Users\ethan\Desktop")
+system("retriever install Gentry -e c")
+</code></pre>
+
+<p>If you put a copy of the Retriever in the working directory for the
+project then setting the working directory manually is not necessary.</p>
+</div>
+</article>
+
+
+</div>
+			</div>
+			<footer id="footer" class="inner"><p>
+  Copyright &copy; 2013 - Ethan White -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>
