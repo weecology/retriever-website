@@ -24,8 +24,7 @@ Windows, Mac and Linux).
 
 ## Citation
 
-If you use the EcoData Retriever, please use the following citation:
-
+If you use the EcoData Retriever, please use the following citation:  
 Morris, Benjamin D., and Ethan P. White. 2013. “The EcoData Retriever:
 Improving Access to Existing Ecological Data.” PLoS ONE 8 (6) (jun):
 65848.
@@ -33,15 +32,23 @@ Improving Access to Existing Ecological Data.” PLoS ONE 8 (6) (jun):
 
 ## Publications using the EcoData Retriever
 
-White, E.P., K.M. Thibault, and X. Xiao. 2012. Characterizing
-species-abundance distributions across taxa and ecosystems using a
-simple maximum entropy model. Ecology.
-[http://dx.doi.org/10.1890/11-2177.1](http://dx.doi.org/10.1890/11-2177.1)
+Locey, K.J. and D.J. McGlinn. 2013. Efficient algorithms for sampling feasible sets of
+macroecological patterns. PeerJ PrePrints 1:e78v1
+[http://doi.org/10.7287/peerj.preprints.78v1](http://doi.org/10.7287/peerj.preprints.78v1)
+
+Locey, K.J. and E.P. White. 2013. How species richness and total abundance
+constrain the distribution of abundance. Ecology
+Letters. 16:1177-1185. [http://doi.org/10.1111/ele.12154](http://doi.org/10.1111/ele.12154)
 
 Coyle, J.R., A.H. Hurlbert, and E.P. White. 2013. Opposing mechanisms
 drive richness patterns of core and transient bird species. The American
 Naturalist 181: E83-90.
-[http://dx.doi.org/10.1086/669903](http://dx.doi.org/10.1086/669903)
+[http://doi.org/10.1086/669903](http://doi.org/10.1086/669903)
+
+White, E.P., K.M. Thibault, and X. Xiao. 2012. Characterizing
+species-abundance distributions across taxa and ecosystems using a
+simple maximum entropy model. Ecology.
+[http://doi.org/10.1890/11-2177.1](http://doi.org/10.1890/11-2177.1)
 
 ## Acknowledgements
 
