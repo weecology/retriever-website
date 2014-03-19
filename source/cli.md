@@ -18,21 +18,24 @@ After installing, run `retriever update` to download all of the
 available dataset scripts. To see the full list of command line options
 and datasets run `retriever --help`. The output will look like this:
 
-    usage: retriever [-h] [-v] {install,update,gui,new,ls,help} ...
+    usage: retriever [-h] [-v] [-q] {install,update,gui,new,ls,citation,help} ...
 
     positional arguments:
-      {install,update,gui,new,ls,help}
+      {install,update,gui,new,ls,citation,help}
                             sub-command help
         install             download and install dataset
         update              download updated versions of scripts
         gui                 launch retriever in graphical mode
         new                 create a new sample retriever script
         ls                  display a list all available dataset scripts
+        citation            view citation
         help
 
     optional arguments:
       -h, --help            show this help message and exit
       -v, --version         show program's version number and exit
+      -q, --quiet           suppress command-line output
+
 
 ## Standard Usage
 
@@ -41,36 +44,26 @@ To get the most recent versions of the data set scripts, run
 
 To install datasets, use `retriever install`:
 
-    usage: retriever install [-h] [-e ENGINE] [-u [USER]] [-p [PASSWORD]]
-                             [--host [HOST]] [-o [PORT]] [-d [DB]] [-f [FILE]]
-                             [--compile] [--debug]
-                             [dataset]
+    usage: retriever install [-h] [--compile] [--debug] {mysql,postgres,sqlite,msaccess,csv} ...
 
     positional arguments:
-      dataset               dataset name
+      {mysql,postgres,sqlite,msaccess,csv}
+                            engine-specific help
+        mysql               MySQL
+        postgres            PostgreSQL
+        sqlite              SQLite
+        msaccess            Microsoft Access
+        csv                 CSV
 
     optional arguments:
       -h, --help            show this help message and exit
-      -e ENGINE, --engine ENGINE
-                            engine (m=MySQL, p=PostgreSQL, s=SQLite, a=Microsoft
-                            Access, c=CSV)
-      -u [USER], --user [USER]
-                            username for database connection, if applicable
-      -p [PASSWORD], --password [PASSWORD]
-                            password for database connection, if applicable
-      --host [HOST]         host for engine, if applicable
-      -o [PORT], --port [PORT]
-                            port for engine, if applicable
-      -d [DB], --db [DB]    database for engine, if applicable
-      -f [FILE], --file [FILE]
-                            file for engine, if applicable
       --compile             force re-compile of script before downloading
       --debug               run in debug mode
 
 For example, to install the Breeding Bird Survey data into an sqlite
 database named mydatabase.db you would use:
 
-    retriever install BBS -e s -f mydatabase.db
+`retriever install sqlite BBS -f mydatabase.db`
 
 You will be prompted for any necessary connection information that is
 not provided.
@@ -78,9 +71,9 @@ not provided.
 To download all data for a given category (such as all data related to
 BIRDS), you can use:
 
-    retriever install birds -e s -f mydatabase.db
+`retriever install sqlite birds -f mydatabase.db`
 
-This is the same as `retriever install ___` for every dataset with the
+This is the same as `retriever install sqlite ...` for every dataset with the
 BIRDS tag.
 
 ## Using the Command Line Interface from inside R
