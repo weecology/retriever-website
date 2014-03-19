@@ -89,7 +89,7 @@ In the simplest case, if you wanted to import the Gentry Forest Transect
 Data the following command from inside of R will download the data,
 convert it to a useable form, save it as comma delimited text files.
 
-    system("retriever install Gentry -e c")
+    system("retriever install csv Gentry")
 
 Then you can simply import the resulting files in the usual manner.
 
@@ -112,7 +112,7 @@ is located. So, if I placed the Retriever on my Desktop I would use the
 commands:
 
     setwd("C:\Users\ethan\Desktop")
-    system("retriever install Gentry -e c")
+    system("retriever install csv Gentry")
 
 If you put a copy of the Retriever in the working directory for the
 project then setting the working directory manually is not necessary.
