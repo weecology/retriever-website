@@ -25,7 +25,7 @@ add it to your path. You can do this by copying and pasting the following
 command into the terminal, pressing enter, and entering your password when
 asked:  
 ```
-sudo -s 'echo "/Applications/retriever.app/Contents/MacOS" > /etc/paths.d/retrieverapp
+sudo -s 'echo "/Applications/retriever.app/Contents/MacOS" > /etc/paths.d/retrieverapp'
 ```
 
 ## Source
