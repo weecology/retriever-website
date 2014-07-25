@@ -23,7 +23,7 @@ management systems (Microsoft Access, MySQL, PostgreSQL, and SQLite, on
 Windows, Mac and Linux).
 
 > "Thanks to the EcoData Retriever I went from idea to results in 30 minutes,
-> and to a submitted manuscript in two months." - Jean Philippe Gibert
+> and to a submitted manuscript in two months." - [Jean Philippe Gibert](http://jeanpgibert.weebly.com/)
 
 
 ## Citation
