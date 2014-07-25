@@ -6,7 +6,7 @@ sharing: false
 footer: true
 --- 
 
-## Finding data is one thing. Getting it ready to use is another. EcoData Retriever does the work so that you can focus on doing science.
+## We handle the data so you can focus on the science
 
 Most ecological datasets do not adhere to any agreed-upon standards in
 format, data structure or method of access. As a result acquiring and
@@ -21,6 +21,10 @@ with the datasets and automatically restructures them into standard
 formats before inserting the data into your choice of database
 management systems (Microsoft Access, MySQL, PostgreSQL, and SQLite, on
 Windows, Mac and Linux).
+
+> "Thanks to the EcoData Retriever I went from idea to results in 30 minutes,
+> and to a submitted manuscript in two months." - Jean Philippe Gibert
+
 
 ## Citation
 
