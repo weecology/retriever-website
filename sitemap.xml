@@ -2,54 +2,54 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://ecodataretriever.org/download.html</loc>
-        <lastmod>2014-07-11T21:52:04-04:00</lastmod>
+        <lastmod>2014-07-11T19:52:04-06:00</lastmod>
     </url>
     <url>
         <loc>http://ecodataretriever.org/available-data.html</loc>
-        <lastmod>2014-02-11T21:56:49-05:00</lastmod>
+        <lastmod>2014-02-11T19:56:49-07:00</lastmod>
     </url>
     <url>
         <loc>http://ecodataretriever.org/scripting.html</loc>
-        <lastmod>2013-12-10T07:19:03-05:00</lastmod>
+        <lastmod>2013-12-10T05:19:03-07:00</lastmod>
     </url>
     <url>
         <loc>http://ecodataretriever.org/getting_started.html</loc>
-        <lastmod>2014-02-11T22:17:44-05:00</lastmod>
+        <lastmod>2014-02-11T20:17:44-07:00</lastmod>
     </url>
     <url>
         <loc>http://ecodataretriever.org/</loc>
-        <lastmod>2013-12-10T07:19:03-05:00</lastmod>
+        <lastmod>2013-12-10T05:19:03-07:00</lastmod>
     </url>
     <url>
         <loc>http://ecodataretriever.org/blog/categories/</loc>
-        <lastmod>2013-12-10T07:19:03-05:00</lastmod>
+        <lastmod>2013-12-10T05:19:03-07:00</lastmod>
     </url>
     <url>
         <loc>http://ecodataretriever.org/blog/</loc>
-        <lastmod>2013-12-10T07:19:03-05:00</lastmod>
+        <lastmod>2013-12-10T05:19:03-07:00</lastmod>
     </url>
     <url>
         <loc>http://ecodataretriever.org/blog/archives/</loc>
-        <lastmod>2013-12-10T07:19:03-05:00</lastmod>
+        <lastmod>2013-12-10T05:19:03-07:00</lastmod>
     </url>
     <url>
         <loc>http://ecodataretriever.org/</loc>
-        <lastmod>2014-07-25T13:08:20-04:00</lastmod>
+        <lastmod>2014-09-01T14:49:38-06:00</lastmod>
     </url>
     <url>
         <loc>http://ecodataretriever.org/new-page/</loc>
-        <lastmod>2013-12-10T07:19:03-05:00</lastmod>
+        <lastmod>2013-12-10T05:19:03-07:00</lastmod>
     </url>
     <url>
         <loc>http://ecodataretriever.org/robots.txt</loc>
-        <lastmod>2013-12-10T07:19:03-05:00</lastmod>
+        <lastmod>2013-12-10T05:19:03-07:00</lastmod>
     </url>
     <url>
         <loc>http://ecodataretriever.org/cli.html</loc>
-        <lastmod>2014-03-19T19:32:04-04:00</lastmod>
+        <lastmod>2014-03-19T17:32:04-06:00</lastmod>
     </url>
     <url>
         <loc>http://ecodataretriever.org/about/</loc>
-        <lastmod>2013-12-10T07:19:03-05:00</lastmod>
+        <lastmod>2013-12-10T05:19:03-07:00</lastmod>
     </url>
 </urlset>
