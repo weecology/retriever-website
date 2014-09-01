@@ -36,6 +36,10 @@ Improving Access to Existing Ecological Data.” PLoS ONE 8 (6) (jun):
 
 ## Publications using the EcoData Retriever
 
+Gibert, J.P. & J.P. DeLong. 2014. Temperature alters food web body-size
+structure. Biology Letters
+10: 20140473. [http://doi.org/10.1098/rsbl.2014.0473](http://doi.org/10.1098/rsbl.2014.0473)
+
 Locey, K.J. and D.J. McGlinn. 2013. Efficient algorithms for sampling feasible sets of
 macroecological patterns. PeerJ PrePrints 1:e78v1
 [http://doi.org/10.7287/peerj.preprints.78v1](http://doi.org/10.7287/peerj.preprints.78v1)
