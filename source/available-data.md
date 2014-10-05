@@ -29,3 +29,6 @@ The following datasets are currently available via the EcoData Retriever.
 * [Forest stand structure and composition along environmental gradients in the central Western Ghats of India](http://esapubs.org/archive/ecol/E091/216/)
 * [Multi-decade, spatially explicit population studies of canopy dynamics in Michigan old-growth forests](http://esapubs.org/archive/ecol/E090/251/)
 * [Mapped quadrats in sagebrush steppe: long-term data for analyzing demographic rates and interactions](http://esapubs.org/archive/ecol/E091/243/)
+* [Bioclim: climate data for ecological modeling and GIS](http://worldclim.org/bioclim)
+* [Mammal Supertree from Fritz et al. 2009](http://dx.doi.org/10.1111/j.1461-0248.2009.01307.x)
+* [MammalDIET: comprehensive global dataset of diet preferences of mammals](http://datadryad.org/resource/doi:10.5061/dryad.6cd0v)
