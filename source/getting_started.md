@@ -14,13 +14,13 @@ install from the Python source.
 ### Windows
 
 Download and run the
-[Windows Installer](https://github.com/weecology/retriever/releases/download/v1.6.0/RetrieverSetupWindows.exe).
+[Windows Installer](https://github.com/weecology/retriever/releases/download/v1.7.0/RetrieverSetup.exe).
 This installer has been tested on Windows 7.
 
 ### Mac
 
 Download the
-[OS X App](https://github.com/weecology/retriever/releases/download/v1.6.0/retriever-app.zip).
+[OS X App](https://github.com/weecology/retriever/releases/download/v1.7.0/retriever-app.zip).
 Unzip the file and then double click on the App. Depending on your version of OS
 X you may need to tell OS X that it is
 [OK to install software from Anywhere](http://support.apple.com/kb/HT5290). After
@@ -29,7 +29,7 @@ installing the Retriever you may return this setting to its original value. The 
 ### Linux
 
 [A Debian
-package](https://github.com/weecology/retriever/releases/download/v1.6.0/python-retriever_1.6-1_all.deb)
+package](https://github.com/weecology/retriever/releases/download/v1.7.0/python-retriever_1.7.0-1_all.deb)
 is provided; If you're on a non-Debian based system, refer to the
 instructions under Installing from Source.
 
@@ -57,7 +57,7 @@ To download and install the Retriever from source, use the following
 commands (Windows users should use a Unix-like environment such as Git
 bash or Cygwin):
 
-1.  `wget https://github.com/weecology/retriever/archive/v1.6.0.tar.gz`
+1.  `wget https://github.com/weecology/retriever/archive/v1.7.0.tar.gz`
 2.  `tar -xvzf retriever-src.tar.gz`
 3.  `cd src`
 4.  `sudo python setup.py install`
