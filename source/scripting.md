@@ -25,11 +25,11 @@ table. The basic script structure is as follows:
     shortname: A one word name for the dataset
     table: Name of the table, URL to the table
 
-The names before the colons tell the Retriever what information is
-provided to the right of the colon. The text in *italics* should be
-replaced with that for the dataset you are adding. For example, the
-script for adding Morgan Ernest's mammalian life history dataset from
-Ecological Archives is simply:
+The names before the colons tell the Retriever what information is provided to
+the right of the colon. The text to the right of the colon should be replaced
+with that for the dataset you are adding. For example, the script for adding
+Morgan Ernest's mammalian life history dataset from Ecological Archives is
+simply:
 
     # basic information about the script
     name: Mammal Life History Database - Ernest, et al., 2003
