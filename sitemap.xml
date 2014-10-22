@@ -1,27 +1,31 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://ecodataretriever.org/download.html</loc>
-        <lastmod>2014-10-05T06:42:51-06:00</lastmod>
+        <loc>http://ecodataretriever.org/robots.txt</loc>
+        <lastmod>2013-12-10T05:19:03-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://ecodataretriever.org/</loc>
+        <lastmod>2014-09-01T14:49:38-06:00</lastmod>
     </url>
     <url>
         <loc>http://ecodataretriever.org/available-data.html</loc>
         <lastmod>2014-10-05T06:52:37-06:00</lastmod>
     </url>
     <url>
-        <loc>http://ecodataretriever.org/scripting.html</loc>
-        <lastmod>2013-12-10T05:19:03-07:00</lastmod>
-    </url>
-    <url>
-        <loc>http://ecodataretriever.org/getting_started.html</loc>
-        <lastmod>2014-10-05T06:56:20-06:00</lastmod>
-    </url>
-    <url>
         <loc>http://ecodataretriever.org/</loc>
         <lastmod>2013-12-10T05:19:03-07:00</lastmod>
     </url>
     <url>
-        <loc>http://ecodataretriever.org/blog/categories/</loc>
+        <loc>http://ecodataretriever.org/cli.html</loc>
+        <lastmod>2014-03-19T17:32:04-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://ecodataretriever.org/scripting.html</loc>
+        <lastmod>2014-10-22T11:06:42-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://ecodataretriever.org/about/</loc>
         <lastmod>2013-12-10T05:19:03-07:00</lastmod>
     </url>
     <url>
@@ -33,23 +37,19 @@
         <lastmod>2013-12-10T05:19:03-07:00</lastmod>
     </url>
     <url>
-        <loc>http://ecodataretriever.org/</loc>
-        <lastmod>2014-09-01T14:49:38-06:00</lastmod>
+        <loc>http://ecodataretriever.org/blog/categories/</loc>
+        <lastmod>2013-12-10T05:19:03-07:00</lastmod>
     </url>
     <url>
         <loc>http://ecodataretriever.org/new-page/</loc>
         <lastmod>2013-12-10T05:19:03-07:00</lastmod>
     </url>
     <url>
-        <loc>http://ecodataretriever.org/robots.txt</loc>
-        <lastmod>2013-12-10T05:19:03-07:00</lastmod>
+        <loc>http://ecodataretriever.org/getting_started.html</loc>
+        <lastmod>2014-10-05T06:56:20-06:00</lastmod>
     </url>
     <url>
-        <loc>http://ecodataretriever.org/cli.html</loc>
-        <lastmod>2014-03-19T17:32:04-06:00</lastmod>
-    </url>
-    <url>
-        <loc>http://ecodataretriever.org/about/</loc>
-        <lastmod>2013-12-10T05:19:03-07:00</lastmod>
+        <loc>http://ecodataretriever.org/download.html</loc>
+        <lastmod>2014-10-05T06:42:51-06:00</lastmod>
     </url>
 </urlset>
