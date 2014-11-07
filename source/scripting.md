@@ -127,9 +127,9 @@ includes this functionality.
 
 ## Full control over column names and data types
 
-By default the Retriever automatically detects both column names and
-data types, but you can also exercise complete over the structure of the
-resulting database by adding `column*: ` lines after a table.
+By default the Retriever automatically detects both column names and data types,
+but you can also exercise complete control over the structure of the resulting
+database by adding `*column: ` lines after a table.
 
     table: name, url
     *column: Name for 1st column, type, type details (e.g. max string length)
