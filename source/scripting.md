@@ -159,16 +159,15 @@ functionality.
 
 ## Restructuring cross-tab data
 
-It is common in ecology to see where the rows indicated one level of
-grouping (e.g., by site) and the columns indicate another level of
-grouping (e.g., by species) and the values in each cell indicate the
-value for the group indicated by the row and column (e.g., the abundance
-of species x at site y). This is referred as cross-tab data and cannot
-be easily handled by database systems, which are based on a one record
-per line structure. The Retriever can restructure this type of data into
-the appropriate form. In scripts this involves telling the retriever the
-name of the column to store the data in and the names of the columns to
-be restructured.
+It is common in ecology to see data where the rows indicate one level of
+grouping (e.g., by site), the columns indicate another level of grouping (e.g.,
+by species), and the values in each cell indicate the value for the group
+indicated by the row and column (e.g., the abundance of species x at site
+y). This is referred as cross-tab data and cannot be easily handled by database
+management systems, which are based on a one record per line structure. The
+Retriever can restructure this type of data into the appropriate form. In
+scripts this involves telling the retriever the name of the column to store the
+data in and the names of the columns to be restructured.
 
     table: name, url
     *column: name of regular column, type
