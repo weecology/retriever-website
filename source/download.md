@@ -28,6 +28,15 @@ asked:
 sudo -s 'echo "/Applications/retriever.app/Contents/MacOS" > /etc/paths.d/retrieverapp'
 ```
 
+## Python Package Index
+
+The retriever can also be installed using `pip`:
+
+`pip install retriever`
+
+On its own this only supports the command line interface. The GUI will only run
+if you [install wxPython](http://wxpython.org/download.php) separately.
+
 ## Source
 
 [Source Tarball](https://github.com/weecology/retriever/archive/v1.7.0.tar.gz)
