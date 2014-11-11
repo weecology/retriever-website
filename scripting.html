@@ -70,6 +70,7 @@ add &hellip;">
   <li><a href="/available-data.html">Available Datasets</a></li>
   <li><a href="/cli.html">Command Line</a></li>
   <li><a href="/scripting.html">Adding Datasets</a></li>
+  <li><a href="https://github.com/weecology/retriever">GitHub Repository</a></li>
 </ul>
 
 </nav>
@@ -234,9 +235,9 @@ table: monthly_ppt, http://esapubs.org/archive/ecol/E088/161/monthly_ppt.csv
 
 <h2>Full control over column names and data types</h2>
 
-<p>By default the Retriever automatically detects both column names and
-data types, but you can also exercise complete over the structure of the
-resulting database by adding <code>column*:</code> lines after a table.</p>
+<p>By default the Retriever automatically detects both column names and data types,
+but you can also exercise complete control over the structure of the resulting
+database by adding <code>*column:</code> lines after a table.</p>
 
 <pre><code>table: name, url
 *column: Name for 1st column, type, type details (e.g. max string length)
@@ -268,16 +269,15 @@ table: MOM, http://www.esapubs.org/Archive/ecol/E084/094/MOMv3.3.txt
 
 <h2>Restructuring cross-tab data</h2>
 
-<p>It is common in ecology to see where the rows indicated one level of
-grouping (e.g., by site) and the columns indicate another level of
-grouping (e.g., by species) and the values in each cell indicate the
-value for the group indicated by the row and column (e.g., the abundance
-of species x at site y). This is referred as cross-tab data and cannot
-be easily handled by database systems, which are based on a one record
-per line structure. The Retriever can restructure this type of data into
-the appropriate form. In scripts this involves telling the retriever the
-name of the column to store the data in and the names of the columns to
-be restructured.</p>
+<p>It is common in ecology to see data where the rows indicate one level of
+grouping (e.g., by site), the columns indicate another level of grouping (e.g.,
+by species), and the values in each cell indicate the value for the group
+indicated by the row and column (e.g., the abundance of species x at site
+y). This is referred as cross-tab data and cannot be easily handled by database
+management systems, which are based on a one record per line structure. The
+Retriever can restructure this type of data into the appropriate form. In
+scripts this involves telling the retriever the name of the column to store the
+data in and the names of the columns to be restructured.</p>
 
 <pre><code>table: name, url
 *column: name of regular column, type
