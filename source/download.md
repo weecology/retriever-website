@@ -8,16 +8,16 @@ footer: true
 
 ## Windows
 
-[Windows Executable](https://github.com/weecology/retriever/releases/download/v1.7.0/RetrieverSetup.exe)
+[Windows Executable](https://github.com/weecology/retriever/releases/download/v1.8.3/RetrieverSetup.exe)
 
 ## Ubuntu/Debian
 
-[Ubuntu/Debian Package](https://github.com/weecology/retriever/releases/download/v1.7.0/python-retriever_1.7.0-1_all.deb)
+[Ubuntu/Debian Package](https://github.com/weecology/retriever/releases/download/v1.8.3/python-retriever_1.8.3-1_all.deb)
 
 ## Mac
 
 1\. Download the
-[OS X App](https://github.com/weecology/retriever/releases/download/v1.7.0/retriever-app.zip)  
+[OS X App](https://github.com/weecology/retriever/releases/download/v1.8.3/retriever.zip)  
 2\. Double click retriever-app.zip to unzip the file  
 3\. Move the retriever.app file into the Applications folder  
 4\. If you want to use the Retriever from the command line or from R you need to
@@ -39,7 +39,7 @@ if you [install wxPython](http://wxpython.org/download.php) separately.
 
 ## Source
 
-[Source Tarball](https://github.com/weecology/retriever/archive/v1.7.0.tar.gz)
+[Source Tarball](https://github.com/weecology/retriever/archive/v1.8.3.tar.gz)
 
 ## Development
 
