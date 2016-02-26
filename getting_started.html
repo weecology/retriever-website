@@ -9,8 +9,8 @@
 	<meta name="author" content="Ethan White">
 
 	
-	<meta name="description" content="Installing Packages Packages are provided for Windows and Ubuntu/Debian Linux, or you can
-install from the Python source. Windows Download and run &hellip;">
+	<meta name="description" content="Installing Packages The Retriever can be installed using Python&rsquo;s pip or by downloading
+self-contained installers Windows, OS X, and Ubuntu/ &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -106,108 +106,33 @@ install from the Python source. Windows Download and run &hellip;">
     
     <div class="entry-content"><h2>Installing Packages</h2>
 
-<p>Packages are provided for Windows and Ubuntu/Debian Linux, or you can
-install from the Python source.</p>
+<p>The Retriever can be installed using Python&rsquo;s <code>pip</code> or by downloading
+self-contained installers Windows, OS X, and Ubuntu/Debian Linux.</p>
 
-<h3>Windows</h3>
+<p>Installers are available on the <a href="download">Download page</a>.</p>
 
-<p>Download and run the
-<a href="https://github.com/weecology/retriever/releases/download/v1.7.0/RetrieverSetup.exe">Windows Installer</a>.
-This installer has been tested on Windows 7.</p>
+<p>If you have Python installed and want to use pip:</p>
 
-<h3>Mac</h3>
+<p><code>pip install retriever</code></p>
 
-<p>Download the
-<a href="https://github.com/weecology/retriever/releases/download/v1.7.0/retriever-app.zip">OS X App</a>.
-Unzip the file and then double click on the App. Depending on your version of OS
-X you may need to tell OS X that it is
-<a href="http://support.apple.com/kb/HT5290">OK to install software from Anywhere</a>. After
-installing the Retriever you may return this setting to its original value. The installer has been tested on OS X 10.7-10.9.</p>
-
-<h3>Linux</h3>
-
-<p><a href="https://github.com/weecology/retriever/releases/download/v1.7.0/python-retriever_1.7.0-1_all.deb">A Debian
-package</a>
-is provided; If you&rsquo;re on a non-Debian based system, refer to the
-instructions under Installing from Source.</p>
-
-<h2>Installing from Source</h2>
-
-<p>To install the EcoData Retriever from source, you&rsquo;ll need:</p>
-
-<ul>
-<li>Python version 2.7.1 or greater (not Python 3.x)</li>
-<li>wxPython version 2.8 or greater; *Mac users need to use 2.9 or greater</li>
-<li>xlrd</li>
-</ul>
-
-
-<p>On Ubuntu, the following command will install all required dependencies:</p>
-
-<pre><code>sudo apt-get install python-setuptools python-wxgtk2.8 python-xlrd
-</code></pre>
-
-<p>The following packages are optional:</p>
-
-<ul>
-<li>PyMySQL (for MySQL)</li>
-<li>sqlite3 (for SQLite)</li>
-<li>pyscopg2 (for PostgreSQL)</li>
-<li>pyodbc (for Microsoft Access &ndash; this option is only available on
-Windows)</li>
-</ul>
-
-
-<p>To download and install the Retriever from source, use the following
-commands (Windows users should use a Unix-like environment such as Git
-bash or Cygwin):</p>
-
-<ol>
-<li><code>wget https://github.com/weecology/retriever/archive/v1.7.0.tar.gz</code></li>
-<li><code>tar -xvzf retriever-src.tar.gz</code></li>
-<li><code>cd src</code></li>
-<li><code>sudo python setup.py install</code></li>
-</ol>
-
-
-<p>If you prefer to install the current master branch:</p>
-
-<ol>
-<li><code>git clone git@github.com:weecology/retriever.git</code></li>
-<li><code>cd retriever</code></li>
-<li><code>sudo python setup.py install</code></li>
-</ol>
-
-
-<p>After installing, type <code>retriever</code> to launch.</p>
+<p>This will only install the command line interface.</p>
 
 <h2>Using the Graphical User Interface</h2>
 
-<p>The first time you launch the EcoData Retriever, it will automatically
-download all available Retriever scripts. You&rsquo;ll then be prompted to
-choose a database system and enter your connection information. Once
-this process is complete, you&rsquo;ll see the following screen:</p>
+<p>For information on using the graphical version of the Retriever see the
+<a href="http://retriever.readthedocs.org/en/latest/guidocs.html">GUI documentation</a>.</p>
 
-<p><img src="images/figure1.png" alt="EcoData Retriever GUI" /></p>
+<h2>Using the Command Line Interface</h2>
 
-<p>You&rsquo;ll see each available dataset with citation information and a link
-to the dataset website. Click on the box icon to start downloading the
-data.</p>
-
-<p>You can use the categories on the left to filter the data to show, for
-example, only data from a specific taxonomic group (like Mammals in the
-image above). You can also search for specific terms using Edit > Find.</p>
-
-<p>If you need to change the database management system that you are using
-just select File > Connection from the menu.</p>
+<p><a href="http://retriever.readthedocs.org/en/latest/introduction.html#using-the-command-line">Command line interface documentation</a></p>
 
 <h2>Using custom scripts</h2>
 
-<p>You can also write your own scripts for datasets that aren&rsquo;t currently
-included in the Retriever. Follow the <a href="scripting.html">instructions for adding
-datasets</a> and then place your custom script in either
-the directory where you are running the Retriever or in a subdirectory
-named &#8220;scripts&#8220;.</p>
+<p>You can also write your own scripts for datasets that aren&rsquo;t currently included
+in the Retriever. Follow the
+<a href="http://retriever.readthedocs.org/en/latest/scripts.html">instructions for writing and loading scripts</a>
+and then place your custom script in either the directory where you are running
+the Retriever or in a subdirectory named <code>scripts</code>.</p>
 </div>
 </article>
 
@@ -215,7 +140,7 @@ named &#8220;scripts&#8220;.</p>
 </div>
 			</div>
 			<footer id="footer" class="inner"><p>
-  Copyright &copy; 2014 - Ethan White -
+  Copyright &copy; 2016 - Ethan White -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
