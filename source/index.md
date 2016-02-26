@@ -60,7 +60,10 @@ simple maximum entropy model. Ecology.
 
 ## Acknowledgements
 
-The EcoData Retriever was written by [Ben Morris](http://www.bendmorris.com) and 
-[Ethan White](http://whitelab.weecology.org). This work was funded by the 
-[National Science Foundation](http://nsf.gov/) as part of a [CAREER award to 
-Ethan White](http://nsf.gov/awardsearch/showAward.do?AwardNumber=0953694).
+The EcoData Retriever was written by [Ben Morris](http://www.bendmorris.com),
+[Ethan White](http://whitelab.weecology.org), and
+[Henry Senyondo](http://weecology.org/user/30). This work was funded by the
+[Gordon and Betty Moore Foundation's Data-Driven Discovery Initiative](http://www.moore.org/programs/science/data-driven-discovery)
+through [Grant GBMF4563](http://www.moore.org/grants/list/GBMF4563) to Ethan
+White, and by the [National Science Foundation](http://nsf.gov/) as part of a
+[CAREER award to Ethan White](http://nsf.gov/awardsearch/showAward.do?AwardNumber=0953694).
