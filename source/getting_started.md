@@ -9,7 +9,7 @@ footer: true
 ## Installing Packages
 
 The Retriever can be installed using Python's `pip` or by downloading
-self-contained installers Windows, OS X, and Ubuntu/Debian Linux.
+self-contained installers for Windows, OS X, and Ubuntu/Debian Linux.
 
 Installers are available on the [Download page](download).
 
