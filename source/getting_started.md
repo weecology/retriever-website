@@ -26,7 +26,7 @@ For information on using the graphical version of the Retriever see the
 
 ## Using the Command Line Interface
 
-[Command line interface documentation](http://retriever.readthedocs.org/en/latest/introduction.html#using-the-command-line)
+See the [command line interface documentation](http://retriever.readthedocs.org/en/latest/introduction.html#using-the-command-line).
 
 ## Using the R package
 
