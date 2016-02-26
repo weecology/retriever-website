@@ -28,6 +28,23 @@ For information on using the graphical version of the Retriever see the
 
 [Command line interface documentation](http://retriever.readthedocs.org/en/latest/introduction.html#using-the-command-line)
 
+## Using the R package
+
+The
+[ecoretriever R package](https://cran.r-project.org/web/packages/ecoretriever/)
+allows the EcoData Retriever to be used directly from R. After installing the
+Retriever, install the R package using:
+
+```
+install.packages("ecoretriever")
+```
+
+See the
+[rOpenSci tutorial](https://ropensci.org/tutorials/ecoretriever_tutorial.html)
+and the
+[documentation](https://cran.r-project.org/web/packages/ecoretriever/ecoretriever.pdf)
+for information on using the R package.
+
 ## Using custom scripts
 
 You can also write your own scripts for datasets that aren't currently included
